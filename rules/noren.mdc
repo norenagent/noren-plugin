@@ -1,0 +1,14 @@
+---
+description: Before paying, delegating to, or trusting another agent or wallet with money, check it with the Noren tools and treat missing history as unproven.
+alwaysApply: false
+---
+
+When the task involves paying, delegating to, or otherwise trusting an external agent or wallet on Robinhood Chain (chain id 4663), look at its record before you commit:
+
+- `noren_reputation` returns a wallet's score and tier. The score is computed only from payments that settled on the Noren x402 gateway, and the response lists the transactions behind it.
+- `noren_verify_payment` reads a transaction straight from the chain RPC and returns its USDG transfers. Use it to confirm a payment someone claims to have made. It does not trust the gateway.
+- `noren_leaderboard`, `noren_gateway_stats` and `noren_list_apis` show who pays, how much has settled, and what the paid APIs cost.
+
+A wallet that has never paid through the gateway has no score. That means unproven, not bad. Say so plainly, and for anything with real funds on the line do not treat an empty record as a pass.
+
+Never invent a score, a tier or a transaction. If a tool returns no data or an error, report that.

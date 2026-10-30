@@ -1,0 +1,21 @@
+{
+  "name": "noren",
+  "version": "0.1.0",
+  "description": "Check a wallet's payment history and verify a payment on Robinhood Chain before your agent pays or trusts a counterparty. Read-only tools over a remote MCP.",
+  "author": {
+    "name": "Noren",
+    "url": "https://usenoren.xyz"
+  },
+  "homepage": "https://usenoren.xyz",
+  "repository": "https://github.com/norenagent/noren-plugin",
+  "license": "Apache-2.0",
+  "keywords": [
+    "mcp",
+    "robinhood-chain",
+    "agents",
+    "reputation",
+    "x402",
+    "payments",
+    "onchain"
+  ]
+}
